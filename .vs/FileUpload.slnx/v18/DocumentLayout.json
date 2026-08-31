@@ -1,0 +1,115 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\akib\\Desktop\\CodeSpace\\FileUpload\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{47EA7A23-0FAE-4982-B6E6-4C2FD83462D3}|src\\FileUpload\\FileUpload.Repository\\FileUpload.Repository.csproj|c:\\users\\akib\\desktop\\codespace\\fileupload\\src\\fileupload\\fileupload.repository\\entities\\uploadedfiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47EA7A23-0FAE-4982-B6E6-4C2FD83462D3}|src\\FileUpload\\FileUpload.Repository\\FileUpload.Repository.csproj|solutionrelative:src\\fileupload\\fileupload.repository\\entities\\uploadedfiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47EA7A23-0FAE-4982-B6E6-4C2FD83462D3}|src\\FileUpload\\FileUpload.Repository\\FileUpload.Repository.csproj|c:\\users\\akib\\desktop\\codespace\\fileupload\\src\\fileupload\\fileupload.repository\\repositories\\fileuploadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47EA7A23-0FAE-4982-B6E6-4C2FD83462D3}|src\\FileUpload\\FileUpload.Repository\\FileUpload.Repository.csproj|solutionrelative:src\\fileupload\\fileupload.repository\\repositories\\fileuploadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47EA7A23-0FAE-4982-B6E6-4C2FD83462D3}|src\\FileUpload\\FileUpload.Repository\\FileUpload.Repository.csproj|c:\\users\\akib\\desktop\\codespace\\fileupload\\src\\fileupload\\fileupload.repository\\repositories\\abstractions\\ifileuploadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47EA7A23-0FAE-4982-B6E6-4C2FD83462D3}|src\\FileUpload\\FileUpload.Repository\\FileUpload.Repository.csproj|solutionrelative:src\\fileupload\\fileupload.repository\\repositories\\abstractions\\ifileuploadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 282,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75c83ab3-5264-45e8-ad32-5c8a41ad477d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75c83ab3-5264-45e8-ad32-5c8a41ad477d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UploadedFiles.cs",
+              "DocumentMoniker": "C:\\Users\\akib\\Desktop\\CodeSpace\\FileUpload\\src\\FileUpload\\FileUpload.Repository\\Entities\\UploadedFiles.cs",
+              "RelativeDocumentMoniker": "src\\FileUpload\\FileUpload.Repository\\Entities\\UploadedFiles.cs",
+              "ToolTip": "C:\\Users\\akib\\Desktop\\CodeSpace\\FileUpload\\src\\FileUpload\\FileUpload.Repository\\Entities\\UploadedFiles.cs",
+              "RelativeToolTip": "src\\FileUpload\\FileUpload.Repository\\Entities\\UploadedFiles.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T11:28:56.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileUploadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\akib\\Desktop\\CodeSpace\\FileUpload\\src\\FileUpload\\FileUpload.Repository\\Repositories\\FileUploadRepository.cs",
+              "RelativeDocumentMoniker": "src\\FileUpload\\FileUpload.Repository\\Repositories\\FileUploadRepository.cs",
+              "ToolTip": "C:\\Users\\akib\\Desktop\\CodeSpace\\FileUpload\\src\\FileUpload\\FileUpload.Repository\\Repositories\\FileUploadRepository.cs",
+              "RelativeToolTip": "src\\FileUpload\\FileUpload.Repository\\Repositories\\FileUploadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T11:27:40.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IFileUploadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\akib\\Desktop\\CodeSpace\\FileUpload\\src\\FileUpload\\FileUpload.Repository\\Repositories\\Abstractions\\IFileUploadRepository.cs",
+              "RelativeDocumentMoniker": "src\\FileUpload\\FileUpload.Repository\\Repositories\\Abstractions\\IFileUploadRepository.cs",
+              "ToolTip": "C:\\Users\\akib\\Desktop\\CodeSpace\\FileUpload\\src\\FileUpload\\FileUpload.Repository\\Repositories\\Abstractions\\IFileUploadRepository.cs",
+              "RelativeToolTip": "src\\FileUpload\\FileUpload.Repository\\Repositories\\Abstractions\\IFileUploadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T10:28:24.7Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

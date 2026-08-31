@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ERS.Shared/ERS.Shared.csproj" Id="793950f3-0adb-4ecb-ab8a-7eacca1255db" />
+    <Project Path="src/ServiceBus/ServiceBus.csproj" Id="8afbddae-b713-48fb-aea5-16e25040c9ac" />
+  </Folder>
+  <Folder Name="/src/FileUpload/">
+    <Project Path="src/FileUpload/FileUpload.AggregateRoot/FileUpload.AggregateRoot.csproj" Id="e54164e6-e10f-47a9-be2b-f170208be713" />
+    <Project Path="src/FileUpload/FileUpload.API/FileUpload.API.csproj" Id="5e54df91-1ce2-4c8e-b84d-44e4bceda9a0" />
+    <Project Path="src/FileUpload/FileUpload.DTO/FileUpload.DTO.csproj" Id="878ef8cd-7862-4d16-a794-08efc5354d42" />
+    <Project Path="src/FileUpload/FileUpload.Handler/FileUpload.Handler.csproj" Id="2085c613-d8df-46a2-8e4a-3db6cb68eaeb" />
+    <Project Path="src/FileUpload/FileUpload.Repository/FileUpload.Repository.csproj" Id="47ea7a23-0fae-4982-b6e6-4c2fd83462d3" />
+  </Folder>
+</Solution>
