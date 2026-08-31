@@ -1,0 +1,13 @@
+G:\FileUpload\src\FileUpload\FileUpload.AggregateRoot\bin\Debug\net10.0\FileUpload.AggregateRoot.deps.json
+G:\FileUpload\src\FileUpload\FileUpload.AggregateRoot\bin\Debug\net10.0\FileUpload.AggregateRoot.dll
+G:\FileUpload\src\FileUpload\FileUpload.AggregateRoot\bin\Debug\net10.0\FileUpload.AggregateRoot.pdb
+G:\FileUpload\src\FileUpload\FileUpload.AggregateRoot\obj\Debug\net10.0\FileUpload.AggregateRoot.csproj.AssemblyReference.cache
+G:\FileUpload\src\FileUpload\FileUpload.AggregateRoot\obj\Debug\net10.0\FileUpload.AggregateRoot.GeneratedMSBuildEditorConfig.editorconfig
+G:\FileUpload\src\FileUpload\FileUpload.AggregateRoot\obj\Debug\net10.0\FileUpload.AggregateRoot.AssemblyInfoInputs.cache
+G:\FileUpload\src\FileUpload\FileUpload.AggregateRoot\obj\Debug\net10.0\FileUpload.AggregateRoot.AssemblyInfo.cs
+G:\FileUpload\src\FileUpload\FileUpload.AggregateRoot\obj\Debug\net10.0\FileUpload.AggregateRoot.csproj.CoreCompileInputs.cache
+G:\FileUpload\src\FileUpload\FileUpload.AggregateRoot\obj\Debug\net10.0\FileUpload.AggregateRoot.sourcelink.json
+G:\FileUpload\src\FileUpload\FileUpload.AggregateRoot\obj\Debug\net10.0\FileUpload.AggregateRoot.dll
+G:\FileUpload\src\FileUpload\FileUpload.AggregateRoot\obj\Debug\net10.0\refint\FileUpload.AggregateRoot.dll
+G:\FileUpload\src\FileUpload\FileUpload.AggregateRoot\obj\Debug\net10.0\FileUpload.AggregateRoot.pdb
+G:\FileUpload\src\FileUpload\FileUpload.AggregateRoot\obj\Debug\net10.0\ref\FileUpload.AggregateRoot.dll

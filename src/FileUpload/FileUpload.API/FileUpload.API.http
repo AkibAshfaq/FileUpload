@@ -1,6 +1,24 @@
-@FileUpload.API_HostAddress = http://localhost:5131
+@FileUpload.API_HostAddress = http://localhost:5199
 
-GET {{FileUpload.API_HostAddress}}/weatherforecast/
-Accept: application/json
+### Upload a photo (multipart form file named "file")
+POST {{FileUpload.API_HostAddress}}/api/UploadPhoto/Upload/Photo?employeeId=1
+Content-Type: multipart/form-data; boundary=----boundary
+
+------boundary
+Content-Disposition: form-data; name="file"; filename="test.jpg"
+Content-Type: image/jpeg
+
+< ./test.jpg
+------boundary--
+
+###
+
+### Retrieve a photo by id
+GET {{FileUpload.API_HostAddress}}/api/UploadPhoto/Photo/1
+
+###
+
+### Delete a photo by id
+DELETE {{FileUpload.API_HostAddress}}/api/UploadPhoto/Photo/1
 
 ###

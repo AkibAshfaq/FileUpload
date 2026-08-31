@@ -1,0 +1,16 @@
+G:\FileUpload\src\ServiceBus\bin\Debug\net10.0\ServiceBus.deps.json
+G:\FileUpload\src\ServiceBus\bin\Debug\net10.0\ServiceBus.dll
+G:\FileUpload\src\ServiceBus\bin\Debug\net10.0\ServiceBus.pdb
+G:\FileUpload\src\ServiceBus\bin\Debug\net10.0\ERS.Shared.dll
+G:\FileUpload\src\ServiceBus\bin\Debug\net10.0\ERS.Shared.pdb
+G:\FileUpload\src\ServiceBus\obj\Debug\net10.0\ServiceBus.csproj.AssemblyReference.cache
+G:\FileUpload\src\ServiceBus\obj\Debug\net10.0\ServiceBus.GeneratedMSBuildEditorConfig.editorconfig
+G:\FileUpload\src\ServiceBus\obj\Debug\net10.0\ServiceBus.AssemblyInfoInputs.cache
+G:\FileUpload\src\ServiceBus\obj\Debug\net10.0\ServiceBus.AssemblyInfo.cs
+G:\FileUpload\src\ServiceBus\obj\Debug\net10.0\ServiceBus.csproj.CoreCompileInputs.cache
+G:\FileUpload\src\ServiceBus\obj\Debug\net10.0\ServiceBus.sourcelink.json
+G:\FileUpload\src\ServiceBus\obj\Debug\net10.0\ServiceBus.csproj.Up2Date
+G:\FileUpload\src\ServiceBus\obj\Debug\net10.0\ServiceBus.dll
+G:\FileUpload\src\ServiceBus\obj\Debug\net10.0\refint\ServiceBus.dll
+G:\FileUpload\src\ServiceBus\obj\Debug\net10.0\ServiceBus.pdb
+G:\FileUpload\src\ServiceBus\obj\Debug\net10.0\ref\ServiceBus.dll

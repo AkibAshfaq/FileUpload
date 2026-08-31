@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "GrcTQK0VrkY=",
+  "dgSpecHash": "7rtjxn7nNNI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\akib\\Desktop\\CodeSpace\\FileUpload\\src\\ERS.Shared\\ERS.Shared.csproj",
+  "projectFilePath": "G:\\FileUpload\\src\\ERS.Shared\\ERS.Shared.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\akib\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.11\\microsoft.extensions.dependencyinjection.10.0.11.nupkg.sha512",
-    "C:\\Users\\akib\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.11\\microsoft.extensions.dependencyinjection.abstractions.10.0.11.nupkg.sha512"
+    "C:\\Users\\akiba\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.11\\microsoft.extensions.dependencyinjection.10.0.11.nupkg.sha512",
+    "C:\\Users\\akiba\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.11\\microsoft.extensions.dependencyinjection.abstractions.10.0.11.nupkg.sha512"
   ],
   "logs": []
 }

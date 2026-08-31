@@ -5,5 +5,6 @@ namespace FileUpload.DTO.Queries
 {
     public sealed record GetSignatureContentQuery : IQuery<SignatureContentResponse>
     {
+        public long Id { get; set; }
     }
 }

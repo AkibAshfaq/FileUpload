@@ -10,3 +10,16 @@ C:\Users\akib\Desktop\CodeSpace\FileUpload\src\ERS.Shared\obj\Debug\net8.0\ERS.S
 C:\Users\akib\Desktop\CodeSpace\FileUpload\src\ERS.Shared\obj\Debug\net8.0\refint\ERS.Shared.dll
 C:\Users\akib\Desktop\CodeSpace\FileUpload\src\ERS.Shared\obj\Debug\net8.0\ERS.Shared.pdb
 C:\Users\akib\Desktop\CodeSpace\FileUpload\src\ERS.Shared\obj\Debug\net8.0\ref\ERS.Shared.dll
+G:\FileUpload\src\ERS.Shared\bin\Debug\net8.0\ERS.Shared.deps.json
+G:\FileUpload\src\ERS.Shared\bin\Debug\net8.0\ERS.Shared.dll
+G:\FileUpload\src\ERS.Shared\bin\Debug\net8.0\ERS.Shared.pdb
+G:\FileUpload\src\ERS.Shared\obj\Debug\net8.0\ERS.Shared.csproj.AssemblyReference.cache
+G:\FileUpload\src\ERS.Shared\obj\Debug\net8.0\ERS.Shared.GeneratedMSBuildEditorConfig.editorconfig
+G:\FileUpload\src\ERS.Shared\obj\Debug\net8.0\ERS.Shared.AssemblyInfoInputs.cache
+G:\FileUpload\src\ERS.Shared\obj\Debug\net8.0\ERS.Shared.AssemblyInfo.cs
+G:\FileUpload\src\ERS.Shared\obj\Debug\net8.0\ERS.Shared.csproj.CoreCompileInputs.cache
+G:\FileUpload\src\ERS.Shared\obj\Debug\net8.0\ERS.Shared.sourcelink.json
+G:\FileUpload\src\ERS.Shared\obj\Debug\net8.0\ERS.Shared.dll
+G:\FileUpload\src\ERS.Shared\obj\Debug\net8.0\refint\ERS.Shared.dll
+G:\FileUpload\src\ERS.Shared\obj\Debug\net8.0\ERS.Shared.pdb
+G:\FileUpload\src\ERS.Shared\obj\Debug\net8.0\ref\ERS.Shared.dll

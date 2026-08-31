@@ -1,0 +1,13 @@
+G:\FileUpload\src\FileUpload\FileUpload.Repository\bin\Debug\net10.0\FileUpload.Repository.deps.json
+G:\FileUpload\src\FileUpload\FileUpload.Repository\bin\Debug\net10.0\FileUpload.Repository.dll
+G:\FileUpload\src\FileUpload\FileUpload.Repository\bin\Debug\net10.0\FileUpload.Repository.pdb
+G:\FileUpload\src\FileUpload\FileUpload.Repository\obj\Debug\net10.0\FileUpload.Repository.csproj.AssemblyReference.cache
+G:\FileUpload\src\FileUpload\FileUpload.Repository\obj\Debug\net10.0\FileUpload.Repository.GeneratedMSBuildEditorConfig.editorconfig
+G:\FileUpload\src\FileUpload\FileUpload.Repository\obj\Debug\net10.0\FileUpload.Repository.AssemblyInfoInputs.cache
+G:\FileUpload\src\FileUpload\FileUpload.Repository\obj\Debug\net10.0\FileUpload.Repository.AssemblyInfo.cs
+G:\FileUpload\src\FileUpload\FileUpload.Repository\obj\Debug\net10.0\FileUpload.Repository.csproj.CoreCompileInputs.cache
+G:\FileUpload\src\FileUpload\FileUpload.Repository\obj\Debug\net10.0\FileUpload.Repository.sourcelink.json
+G:\FileUpload\src\FileUpload\FileUpload.Repository\obj\Debug\net10.0\FileUpload.Repository.dll
+G:\FileUpload\src\FileUpload\FileUpload.Repository\obj\Debug\net10.0\refint\FileUpload.Repository.dll
+G:\FileUpload\src\FileUpload\FileUpload.Repository\obj\Debug\net10.0\FileUpload.Repository.pdb
+G:\FileUpload\src\FileUpload\FileUpload.Repository\obj\Debug\net10.0\ref\FileUpload.Repository.dll

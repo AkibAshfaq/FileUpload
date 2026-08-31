@@ -1,9 +1,10 @@
-﻿using ERS.Shared.Abstractions.Query;
+using ERS.Shared.Abstractions.Query;
 using FileUpload.DTO.Results;
 
 namespace FileUpload.DTO.Queries
 {
-    internal class GetCretificateContentQuery : IQuery<CertificateContentResponse>
+    public sealed record GetCretificateContentQuery : IQuery<CertificateContentResponse>
     {
+        public long Id { get; set; }
     }
 }

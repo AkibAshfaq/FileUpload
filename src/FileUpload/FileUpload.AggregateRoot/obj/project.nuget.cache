@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "R9wHTffLYnA=",
+  "dgSpecHash": "7UOHhAUwdvg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\akib\\Desktop\\CodeSpace\\FileUpload\\src\\FileUpload\\FileUpload.AggregateRoot\\FileUpload.AggregateRoot.csproj",
+  "projectFilePath": "G:\\FileUpload\\src\\FileUpload\\FileUpload.AggregateRoot\\FileUpload.AggregateRoot.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\akib\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.11\\microsoft.extensions.configuration.10.0.11.nupkg.sha512",
-    "C:\\Users\\akib\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.11\\microsoft.extensions.configuration.abstractions.10.0.11.nupkg.sha512",
-    "C:\\Users\\akib\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.11\\microsoft.extensions.dependencyinjection.10.0.11.nupkg.sha512",
-    "C:\\Users\\akib\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.11\\microsoft.extensions.dependencyinjection.abstractions.10.0.11.nupkg.sha512",
-    "C:\\Users\\akib\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.11\\microsoft.extensions.primitives.10.0.11.nupkg.sha512"
+    "C:\\Users\\akiba\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.11\\microsoft.extensions.configuration.10.0.11.nupkg.sha512",
+    "C:\\Users\\akiba\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.11\\microsoft.extensions.configuration.abstractions.10.0.11.nupkg.sha512",
+    "C:\\Users\\akiba\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.11\\microsoft.extensions.dependencyinjection.10.0.11.nupkg.sha512",
+    "C:\\Users\\akiba\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.11\\microsoft.extensions.dependencyinjection.abstractions.10.0.11.nupkg.sha512",
+    "C:\\Users\\akiba\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.11\\microsoft.extensions.primitives.10.0.11.nupkg.sha512"
   ],
   "logs": []
 }
