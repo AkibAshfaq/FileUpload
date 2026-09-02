@@ -1,0 +1,65 @@
+[
+  {
+    "ContainingType": "FileUpload.API.Controllers.UploadContentController",
+    "Method": "GetPhoto",
+    "RelativePath": "api/UploadContent/Photo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Identity",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileUpload.API.Controllers.UploadContentController",
+    "Method": "DeletePhoto",
+    "RelativePath": "api/UploadContent/Photo",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BdjobsId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FileUpload.API.Controllers.UploadContentController",
+    "Method": "UploadPhoto",
+    "RelativePath": "api/UploadContent/Upload/Photo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
