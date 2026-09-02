@@ -17,21 +17,16 @@ namespace FileUpload.Handler.CommandHandlers
         }
         public Task<IEnumerable<Event>> HandleAsync(CreateOrUpdateContentCommand command)
         {
-            var content = _contentRepository.GetByIdAsync(command.BdjobsId, command.FileType);
-            
-                
+            var content = _contentRepository.GetByIdAsync(command.Id);
+            var contentDto = _contentAggregate.CommandToEntity(command)
+                    ?? throw new Exception("Failed to convert command to DTO");
             if (content != null)
             {
-                var insertContentDto = _contentAggregate.InsertCommandToEntity(command)
-                    ?? throw new Exception("Failed to convert command to DTO");
-                var newContent = _contentRepository.InsertAsync(insertContentDto);
+                var newContent = _contentRepository.InsertAsync(contentDto);
                 if(newContent.Result < 0) throw new Exception("Failed to insert content");
             }
 
-            var updateContentDto = _contentAggregate.UpdateCommandToEntity(command)
-                ?? throw new Exception("Failed to convert command to DTO");
-
-            var updateContent = _contentRepository.UpdateAsync(updateContentDto);
+            var updateContent = _contentRepository.UpdateAsync(contentDto);
             if (!updateContent.Result) throw new Exception("Failed to update content");
 
             return Task.FromResult<IEnumerable<Event>>(new[] { new Event { message = "Content saved successfully" } } );

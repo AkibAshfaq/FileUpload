@@ -18,7 +18,7 @@ namespace FileUpload.Handler.QueryHandlers
         }
         public Task<IEnumerable<ContentResponse>> HandleAsync(GetContentQuery query)
         {
-            var content = _contentRepository.GetByIdAsync(query.Identity, query.FileType);
+            var content = _contentRepository.GetByIdAsync(query.Identity);
             if (content == null) throw new Exception("Content Not Available");
             
             var contentResponse = _contentAggregate.AggToResponse(content.Result)

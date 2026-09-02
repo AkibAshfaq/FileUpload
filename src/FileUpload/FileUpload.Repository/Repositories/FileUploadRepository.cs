@@ -12,12 +12,12 @@ namespace FileUpload.Repository.Repositories
         {
             _connectionfactory = connectionfactory;
         }
-        public async Task<bool> DeleteAsync(long id, string filetype)
+        public async Task<bool> DeleteAsync(long id)
         {
             const string sql = "DELETE FROM UploadedFiles WHERE BdjobsId = @Id AND FileType = @FileType";
             
             var connection = _connectionfactory.CreateConnectionAsync();
-            var rowaffected = await connection.ExecuteAsync(sql, new { id, filetype });
+            var rowaffected = await connection.ExecuteAsync(sql, new { id });
             return rowaffected > 0;
         }
         public async Task<IReadOnlyList<FileUploadAggregate>> GetAllAsync()
@@ -28,17 +28,26 @@ namespace FileUpload.Repository.Repositories
             var result = await connection.QueryAsync<FileUploadAggregate>(sql);
             return result.ToList();
         }
-        public async Task<FileUploadAggregate> GetByIdAsync(long id, string filetype)
+        public async Task<FileUploadAggregate> GetByIdAsync(long id)
         {
-            const string sql = "SELECT * FROM UploadedFiles WHERE BdjobsId = @Id AND FileType = @FileType";
+            const string sql = "SELECT * FROM BdjobsPhotoSignature WHERE BdjobsId = @Id";
             var connection = _connectionfactory.CreateConnectionAsync();
-            var result = await connection.QueryFirstOrDefaultAsync<FileUploadAggregate>(sql, new { id, filetype });
+            var result = await connection.QueryFirstOrDefaultAsync<FileUploadAggregate>(sql, new { id });
             return result;
         }
         public async Task<long> InsertAsync(FileUploadAggregate entity)
         {
-            const string sql = @"INSERT INTO UploadedFiles (BdjobsId, FileName, FileType, ContentType, SizeBytes, FileData, CreatedAtUtc)
-                    VALUES (@BdjobsId, @FileName, @FileType, @ContentType, @SizeBytes, @FileData, @CreatedAt);";
+            const string sql = @" INSERT INTO BdjobsPhotoSignature
+                    (BdjobsID, BdJobsPhoto, PhotoURL, PhotoPostedOn
+                     ProfessionalCertification, 
+                    Signature, SignatureUrl, SignaturePostedOn, 
+                    Certificate ,CertificateUrl, CertificatePostedOn)
+                    
+                    VALUES (@BdjobsID, @BdJobsPhoto, @PhotoURL, @PhotoPostedOn, 
+                            @ProfessionalCertification, 
+                            @Signature, @SignatureUrl, @SignaturePostedOn, 
+                            @Certificate, @CertificateUrl, @CertificatePostedOn)";
+
             var connection = _connectionfactory.CreateConnectionAsync();
             var result = await connection.QueryFirstOrDefaultAsync<long>(sql, entity);
             return result;
@@ -50,7 +59,17 @@ namespace FileUpload.Repository.Repositories
         }
         public async Task<bool> UpdateAsync(FileUploadAggregate entity)
         {
-            const string sql = "UPDATE UploadedFiles SET FileName = @FileName, SizeBytes = @SizeBytes, ContentType = @ContentType, FileType = @Filetype, FileData = @FileData, UpdatedAtUtc = @UpdatedAt WHERE BdjobsId = @BdjobsId";
+            const string sql = "UPDATE UploadedFiles SET FileName = @FileName, " +
+                "FileToken = @FileToken, " +
+                "SizeBytes = @SizeBytes, " +
+                "ContentType = @ContentType, " +
+                "Downloadurl = @Downloadurl, " +
+                "FileType = @Filetype, " +
+                "FileData = @FileData, " +
+                "UpdatedAtUtc = @UpdatedAtUtc " +
+                
+                "WHERE BdjobsId = @BdjobsId";
+
             var connection = _connectionfactory.CreateConnectionAsync();
             var rowaffected = await connection.ExecuteAsync(sql, entity);
             return rowaffected > 0;

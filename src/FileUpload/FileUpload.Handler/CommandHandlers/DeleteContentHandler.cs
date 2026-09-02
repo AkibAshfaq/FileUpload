@@ -19,10 +19,10 @@ namespace FileUpload.Handler.CommandHandlers
 
         public Task<IEnumerable<Event>> HandleAsync(DeleteContentCommand command)
         {
-            var content = _contentRepository.GetByIdAsync(command.BdjobsId, command.FileType);
+            var content = _contentRepository.GetByIdAsync(command.BdjobsId);
             if (content == null) throw new Exception("Content Not Available");
 
-            var result = _contentRepository.DeleteAsync(command.BdjobsId, command.FileType);
+            var result = _contentRepository.DeleteAsync(command.BdjobsId);
             if(!result.Result) throw new Exception("Failed to delete content");
             return Task.FromResult<IEnumerable<Event>>(new[] { new Event { message = "Content deleted successfully" } });
         }

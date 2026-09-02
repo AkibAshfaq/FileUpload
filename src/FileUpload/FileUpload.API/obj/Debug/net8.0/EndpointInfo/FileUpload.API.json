@@ -10,31 +10,21 @@
         "tags": [
           "UploadContent"
         ],
-        "parameters": [
-          {
-            "name": "fileType",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "file": {
-                    "type": "string",
-                    "format": "binary"
-                  }
-                }
-              },
-              "encoding": {
-                "file": {
-                  "style": "form"
-                }
+                "$ref": "#/components/schemas/CreateOrUpdateContentCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrUpdateContentCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrUpdateContentCommand"
               }
             }
           }
@@ -86,13 +76,6 @@
               "type": "integer",
               "format": "int64"
             }
-          },
-          {
-            "name": "FileType",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -103,7 +86,62 @@
       }
     }
   },
-  "components": { },
+  "components": {
+    "schemas": {
+      "CreateOrUpdateContentCommand": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hasBdjobsPhoto": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "photosUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "photoPostedOn": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "professionalCertification": {
+            "type": "string",
+            "nullable": true
+          },
+          "hasSignature": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "signaturesUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "signaturePostedOn": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "hasCertificate": {
+            "type": "boolean"
+          },
+          "certificationUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "certificatePostedOn": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
   "tags": [
     {
       "name": "UploadContent"

@@ -5,16 +5,16 @@ namespace FileUpload.DTO.Results
 {
     public sealed record ContentResponse : IResult
     {
-        public long Id { get; set; }
-        public long BdjobsId { get; set; }
-        public Guid FileToken { get; set; }
-        public string FileType { get; set; }
-        public string FileName { get; set; }
-        public string ContentType { get; set; }
-        public long SizeBytes { get; set; }
-        public DateTime UpdatedAtUtc { get; set; }
-        public string? DownloadUrl { get; set; }
-        [JsonIgnore]
-        public byte[] FileData { get; set; } = [];
+        public int Id { get; set; }
+        public bool? HasBdjobsPhoto { get; set; }
+        public string? PhotosUrl { get; set; }
+        public DateTime? PhotoPostedOn { get; set; }
+        public string? ProfessionalCertification { get; set; }
+        public bool? HasSignature { get; set; }
+        public string? SignaturesUrl { get; set; }
+        public DateTime? SignaturePostedOn { get; set; }
+        public bool? HasCertificate { get; set; }
+        public string? CertificationUrl { get; set; }
+        public DateTime? CertificatePostedOn { get; set; }
     }
 }

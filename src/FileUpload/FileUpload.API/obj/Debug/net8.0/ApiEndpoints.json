@@ -32,11 +32,6 @@
         "Name": "BdjobsId",
         "Type": "System.Int64",
         "IsRequired": false
-      },
-      {
-        "Name": "FileType",
-        "Type": "System.String",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -50,14 +45,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "fileType",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "file",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
+        "Name": "command",
+        "Type": "FileUpload.DTO.Commands.CreateOrUpdateContentCommand",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

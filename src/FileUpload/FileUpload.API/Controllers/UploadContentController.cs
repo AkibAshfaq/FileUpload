@@ -18,19 +18,8 @@ namespace FileUpload.API.Controllers
         }
 
         [HttpPost("Upload/Photo")]
-        public async Task<IActionResult> UploadPhoto(string fileType, IFormFile file)
+        public async Task<IActionResult> UploadPhoto([FromBody]CreateOrUpdateContentCommand command)
         {
-            await using var memoryStream = new MemoryStream();
-            await file.CopyToAsync(memoryStream);
-            var command = new CreateOrUpdateContentCommand
-            {
-                FileName = Path.GetFileName(file.FileName.Replace('\\', '/')),
-                FileType = fileType,
-                ContentType = file.ContentType,
-                SizeBytes = file.Length,
-                FileData = memoryStream.ToArray()
-            };
-
             var handler = _serviceProvider.GetRequiredService<ICommandHandler<CreateOrUpdateContentCommand>>();
             return Ok(await handler.HandleAsync(command));
         }

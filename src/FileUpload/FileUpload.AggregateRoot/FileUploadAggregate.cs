@@ -7,78 +7,61 @@ namespace FileUpload.AggregateRoot
     public class FileUploadAggregate
     {
         private readonly IValidator<CreateOrUpdateContentCommand> _validator;
-
         public FileUploadAggregate(IValidator<CreateOrUpdateContentCommand> validator)
         {
             _validator = validator;
         }
         public FileUploadAggregate() { }
 
-        public long Id { get; set; }
-        public Guid FileToken { get; set; }
-        public string? DownloadUrl { get; set; }
-        public long BdjobsId { get; set; }
-        public string FileName { get; set; }
-        public string FileType { get; set; }
-        public string ContentType { get; set; }
-        public long SizeBytes { get; set; }
-        public byte[] FileData { get; set; }
-        public DateTime CreatedAtUtc { get; set; }
-        public DateTime? UpdatedAtUtc { get; set; }
+        public int Id { get; set; }
+        public int BdjobsId { get; set; }
+        public bool? BdjobsPhoto {  get; set; }
+        public string? PhotoUrl { get; set; }
+        public DateTime? PhotoPostedOn { get; set; }
+        public string? ProfessionalCertification { get; set; }
+        public bool? Signature { get; set; }
+        public string? SignatureUrl { get; set; }
+        public DateTime? SignaturePostedOn { get; set; }
+        public bool? Certificate { get; set; }
+        public string? CertificateUrl { get; set; }
+        public DateTime? CertificatePostedOn { get; set; }
 
-        public FileUploadAggregate InsertCommandToEntity(CreateOrUpdateContentCommand command) 
+        public FileUploadAggregate CommandToEntity(CreateOrUpdateContentCommand command) 
         {
             _validator.ValidateAndThrow(command);
 
-        
             return new FileUploadAggregate(_validator)
             {
-                BdjobsId = command.BdjobsId,
-                FileToken = command.FileToken,
-                FileName = command.FileName,
-                FileType = command.FileType,
-                ContentType = command.ContentType,
-                SizeBytes = command.SizeBytes,
-                DownloadUrl = command.FileUrl,
-                FileData = command.FileData,
-                CreatedAtUtc = DateTime.Now,
-                UpdatedAtUtc = DateTime.Now
+                BdjobsId = command.Id,
+                BdjobsPhoto = command.HasBdjobsPhoto,
+                PhotoUrl = command.PhotosUrl,
+                PhotoPostedOn = command.PhotoPostedOn,
+                //ProfessionalCertification = command.ProfessionalCertification,
+                Signature = command.HasSignature,
+                SignatureUrl = command.SignaturesUrl,
+                SignaturePostedOn = command.SignaturePostedOn,
+                Certificate = command.HasCertificate,
+                CertificateUrl = command.CertificationUrl,
+                CertificatePostedOn = command.CertificatePostedOn
             };
 
         }
 
-        public FileUploadAggregate UpdateCommandToEntity(CreateOrUpdateContentCommand command)
-        {
-            _validator.ValidateAndThrow(command);
-
-
-            return new FileUploadAggregate(_validator)
-            {
-                BdjobsId = command.BdjobsId,
-                FileToken = command.FileToken,
-                FileName = command.FileName,
-                FileType = command.FileType,
-                ContentType = command.ContentType,
-                SizeBytes = command.SizeBytes,
-                DownloadUrl = command.FileUrl,
-                FileData = command.FileData,
-                UpdatedAtUtc = DateTime.Now
-            };
-
-        }
         public ContentResponse AggToResponse(FileUploadAggregate file)
         {
             return new ContentResponse
             {
-                Id = file.Id,
-                BdjobsId = file.BdjobsId,
-                FileToken = file.FileToken,
-                FileName = file.FileName,
-                FileType = file.FileType,
-                ContentType = file.ContentType,
-                SizeBytes = file.SizeBytes,
-                FileData = file.FileData,
-                DownloadUrl = file.DownloadUrl
+                Id = file.BdjobsId,
+                HasBdjobsPhoto = file.BdjobsPhoto,
+                PhotosUrl = file.PhotoUrl,
+                PhotoPostedOn = file.PhotoPostedOn,
+                ProfessionalCertification = file.ProfessionalCertification,
+                HasSignature = file.Signature,
+                SignaturesUrl = file.SignatureUrl,
+                SignaturePostedOn = file.SignaturePostedOn,
+                HasCertificate = file.Certificate,
+                CertificationUrl = file.CertificateUrl,
+                CertificatePostedOn = file.CertificatePostedOn
             };
         }
     }

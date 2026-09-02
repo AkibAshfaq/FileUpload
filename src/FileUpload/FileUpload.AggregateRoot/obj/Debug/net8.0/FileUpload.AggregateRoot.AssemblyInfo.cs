@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FileUpload.AggregateRoot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0fa3986ae4204d686a1b05d5cfb1b80639f176c5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+719b22bae3d0e2f6efd5c21dc29806528f3b63df")]
 [assembly: System.Reflection.AssemblyProductAttribute("FileUpload.AggregateRoot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FileUpload.AggregateRoot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
