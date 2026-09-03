@@ -95,46 +95,25 @@
             "type": "integer",
             "format": "int32"
           },
-          "hasBdjobsPhoto": {
-            "type": "boolean",
+          "fileUploadContents": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FileUploadContent"
+            },
             "nullable": true
-          },
-          "photosUrl": {
+          }
+        },
+        "additionalProperties": false
+      },
+      "FileUploadContent": {
+        "type": "object",
+        "properties": {
+          "type": {
             "type": "string",
             "nullable": true
           },
-          "photoPostedOn": {
+          "fileUrl": {
             "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "professionalCertification": {
-            "type": "string",
-            "nullable": true
-          },
-          "hasSignature": {
-            "type": "boolean",
-            "nullable": true
-          },
-          "signaturesUrl": {
-            "type": "string",
-            "nullable": true
-          },
-          "signaturePostedOn": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "hasCertificate": {
-            "type": "boolean"
-          },
-          "certificationUrl": {
-            "type": "string",
-            "nullable": true
-          },
-          "certificatePostedOn": {
-            "type": "string",
-            "format": "date-time",
             "nullable": true
           }
         },

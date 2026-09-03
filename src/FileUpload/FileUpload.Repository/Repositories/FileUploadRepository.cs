@@ -14,7 +14,7 @@ namespace FileUpload.Repository.Repositories
         }
         public async Task<bool> DeleteAsync(long id)
         {
-            const string sql = "DELETE FROM UploadedFiles WHERE BdjobsId = @Id AND FileType = @FileType";
+            const string sql = "DELETE FROM BdjobsPhotoSignature WHERE BdjobsId = @Id";
             
             var connection = _connectionfactory.CreateConnectionAsync();
             var rowaffected = await connection.ExecuteAsync(sql, new { id });
@@ -22,7 +22,7 @@ namespace FileUpload.Repository.Repositories
         }
         public async Task<IReadOnlyList<FileUploadAggregate>> GetAllAsync()
         {
-            const string sql = "SELECT * FROM UploadedFiles";
+            const string sql = "SELECT * FROM BdjobsPhotoSignature";
             
             var connection = _connectionfactory.CreateConnectionAsync();
             var result = await connection.QueryAsync<FileUploadAggregate>(sql);
@@ -38,7 +38,7 @@ namespace FileUpload.Repository.Repositories
         public async Task<long> InsertAsync(FileUploadAggregate entity)
         {
             const string sql = @" INSERT INTO BdjobsPhotoSignature
-                    (BdjobsID, BdJobsPhoto, PhotoURL, PhotoPostedOn
+                    (BdjobsID, BdJobsPhoto, PhotoURL, PhotoPostedOn,
                      ProfessionalCertification, 
                     Signature, SignatureUrl, SignaturePostedOn, 
                     Certificate ,CertificateUrl, CertificatePostedOn)
@@ -59,16 +59,17 @@ namespace FileUpload.Repository.Repositories
         }
         public async Task<bool> UpdateAsync(FileUploadAggregate entity)
         {
-            const string sql = "UPDATE UploadedFiles SET FileName = @FileName, " +
-                "FileToken = @FileToken, " +
-                "SizeBytes = @SizeBytes, " +
-                "ContentType = @ContentType, " +
-                "Downloadurl = @Downloadurl, " +
-                "FileType = @Filetype, " +
-                "FileData = @FileData, " +
-                "UpdatedAtUtc = @UpdatedAtUtc " +
-                
-                "WHERE BdjobsId = @BdjobsId";
+            const string sql = "UPDATE UploadedFiles SET " +
+                "BdJobsPhoto = @BdJobsPhoto, " +
+                "PhotoURL = @PhotoURL, " +
+                "PhotoPostedOn = @PhotoPostedOn, " +
+                "ProfessionalCertification = @ProfessionalCertification, " +
+                "Signature = @Signature, SignatureUrl = @SignatureUrl, " +
+                "SignaturePostedOn = @SignaturePostedOn, " +
+                "Certificate = @Certificate, " +
+                "CertificateUrl = @CertificateUrl, " +
+                "CertificatePostedOn = @CertificatePostedOn" +
+                    " WHERE BdjobsId = @BdjobsId";
 
             var connection = _connectionfactory.CreateConnectionAsync();
             var rowaffected = await connection.ExecuteAsync(sql, entity);

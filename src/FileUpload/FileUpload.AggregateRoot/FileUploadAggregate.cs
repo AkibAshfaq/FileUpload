@@ -6,8 +6,8 @@ namespace FileUpload.AggregateRoot
 {
     public class FileUploadAggregate
     {
-        private readonly IValidator<CreateOrUpdateContentCommand> _validator;
-        public FileUploadAggregate(IValidator<CreateOrUpdateContentCommand> validator)
+        private readonly IValidator<CreateOrUpdateContentDto> _validator;
+        public FileUploadAggregate(IValidator<CreateOrUpdateContentDto> validator)
         {
             _validator = validator;
         }
@@ -26,25 +26,55 @@ namespace FileUpload.AggregateRoot
         public string? CertificateUrl { get; set; }
         public DateTime? CertificatePostedOn { get; set; }
 
-        public FileUploadAggregate CommandToEntity(CreateOrUpdateContentCommand command) 
+        public CreateOrUpdateContentDto CommandToDto(CreateOrUpdateContentCommand command)
         {
-            _validator.ValidateAndThrow(command);
+            var dto = new CreateOrUpdateContentDto() { Id = command.Id };
 
+            foreach (var fileContent in command.FileUploadContents)
+            {
+                if (fileContent.Type == "Signature")
+                {
+                    dto.HasSignature = true;
+                    dto.SignaturesUrl = fileContent.FileUrl;
+                    dto.SignaturePostedOn = DateTime.UtcNow;
+                }
+                
+                if (fileContent.Type == "Certificate")
+                {
+                    dto.HasCertificate = true;
+                    dto.CertificationUrl = fileContent.FileUrl;
+                    dto.CertificatePostedOn = DateTime.UtcNow;
+                }
+                
+                if (fileContent.Type == "Photo")
+                {
+                    dto.HasBdjobsPhoto = true;
+                    dto.PhotosUrl = fileContent.FileUrl;
+                    dto.PhotoPostedOn = DateTime.UtcNow;
+                }
+            }
+            return dto;
+        }
+
+
+        public FileUploadAggregate DtoToAgg(CreateOrUpdateContentDto dto)
+        {
+            _validator.ValidateAndThrow(dto);
             return new FileUploadAggregate(_validator)
             {
-                BdjobsId = command.Id,
-                BdjobsPhoto = command.HasBdjobsPhoto,
-                PhotoUrl = command.PhotosUrl,
-                PhotoPostedOn = command.PhotoPostedOn,
-                //ProfessionalCertification = command.ProfessionalCertification,
-                Signature = command.HasSignature,
-                SignatureUrl = command.SignaturesUrl,
-                SignaturePostedOn = command.SignaturePostedOn,
-                Certificate = command.HasCertificate,
-                CertificateUrl = command.CertificationUrl,
-                CertificatePostedOn = command.CertificatePostedOn
-            };
+                BdjobsId = dto.Id,
+                BdjobsPhoto = dto.HasBdjobsPhoto,
+                PhotoUrl = dto.PhotosUrl,
+                PhotoPostedOn = dto.PhotoPostedOn,
+                ProfessionalCertification = dto.ProfessionalCertification,
+                Signature = dto.HasSignature,
+                SignatureUrl = dto.SignaturesUrl,
+                SignaturePostedOn = dto.SignaturePostedOn,
+                Certificate = dto.HasCertificate,
+                CertificateUrl = dto.CertificationUrl,
+                CertificatePostedOn = dto.CertificatePostedOn
 
+            };
         }
 
         public ContentResponse AggToResponse(FileUploadAggregate file)

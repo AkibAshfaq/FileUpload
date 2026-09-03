@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\akib\\Desktop\\CodeSpace\\FileUpload\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2085C613-D8DF-46A2-8E4A-3DB6CB68EAEB}|src\\FileUpload\\FileUpload.Handler\\FileUpload.Handler.csproj|c:\\users\\akib\\desktop\\codespace\\fileupload\\src\\fileupload\\fileupload.handler\\commandhandlers\\createorupdatecontenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2085C613-D8DF-46A2-8E4A-3DB6CB68EAEB}|src\\FileUpload\\FileUpload.Handler\\FileUpload.Handler.csproj|solutionrelative:src\\fileupload\\fileupload.handler\\commandhandlers\\createorupdatecontenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54164E6-E10F-47A9-BE2B-F170208BE713}|src\\FileUpload\\FileUpload.AggregateRoot\\FileUpload.AggregateRoot.csproj|c:\\users\\akib\\desktop\\codespace\\fileupload\\src\\fileupload\\fileupload.aggregateroot\\fileuploadaggregate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54164E6-E10F-47A9-BE2B-F170208BE713}|src\\FileUpload\\FileUpload.AggregateRoot\\FileUpload.AggregateRoot.csproj|solutionrelative:src\\fileupload\\fileupload.aggregateroot\\fileuploadaggregate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 69,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,6 +63,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateOrUpdateContentHandler.cs",
+              "DocumentMoniker": "C:\\Users\\akib\\Desktop\\CodeSpace\\FileUpload\\src\\FileUpload\\FileUpload.Handler\\CommandHandlers\\CreateOrUpdateContentHandler.cs",
+              "RelativeDocumentMoniker": "src\\FileUpload\\FileUpload.Handler\\CommandHandlers\\CreateOrUpdateContentHandler.cs",
+              "ToolTip": "C:\\Users\\akib\\Desktop\\CodeSpace\\FileUpload\\src\\FileUpload\\FileUpload.Handler\\CommandHandlers\\CreateOrUpdateContentHandler.cs",
+              "RelativeToolTip": "src\\FileUpload\\FileUpload.Handler\\CommandHandlers\\CreateOrUpdateContentHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T05:50:19.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileUploadAggregate.cs",
+              "DocumentMoniker": "C:\\Users\\akib\\Desktop\\CodeSpace\\FileUpload\\src\\FileUpload\\FileUpload.AggregateRoot\\FileUploadAggregate.cs",
+              "RelativeDocumentMoniker": "src\\FileUpload\\FileUpload.AggregateRoot\\FileUploadAggregate.cs",
+              "ToolTip": "C:\\Users\\akib\\Desktop\\CodeSpace\\FileUpload\\src\\FileUpload\\FileUpload.AggregateRoot\\FileUploadAggregate.cs",
+              "RelativeToolTip": "src\\FileUpload\\FileUpload.AggregateRoot\\FileUploadAggregate.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAUwDsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T05:41:17.145Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -3,7 +3,7 @@ using FluentValidation;
 
 namespace FileUpload.AggregateRoot.FluentValidation
 {
-    public class CreateOrUpdateValidator : AbstractValidator<CreateOrUpdateContentCommand>
+    public class CreateOrUpdateValidator : AbstractValidator<CreateOrUpdateContentDto>
     {
         //private static readonly string[] AllowedFileTypes =
         //    { "Certificate", "Signature", "Photo" };

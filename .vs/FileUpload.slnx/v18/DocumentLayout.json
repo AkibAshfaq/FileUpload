@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\akib\\Desktop\\CodeSpace\\FileUpload\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5E54DF91-1CE2-4C8E-B84D-44E4BCEDA9A0}|src\\FileUpload\\FileUpload.API\\FileUpload.API.csproj|c:\\users\\akib\\desktop\\codespace\\fileupload\\src\\fileupload\\fileupload.api\\controllers\\uploadcontentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E54DF91-1CE2-4C8E-B84D-44E4BCEDA9A0}|src\\FileUpload\\FileUpload.API\\FileUpload.API.csproj|solutionrelative:src\\fileupload\\fileupload.api\\controllers\\uploadcontentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 69,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -59,19 +54,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UploadContentController.cs",
-              "DocumentMoniker": "C:\\Users\\akib\\Desktop\\CodeSpace\\FileUpload\\src\\FileUpload\\FileUpload.API\\Controllers\\UploadContentController.cs",
-              "RelativeDocumentMoniker": "src\\FileUpload\\FileUpload.API\\Controllers\\UploadContentController.cs",
-              "ToolTip": "C:\\Users\\akib\\Desktop\\CodeSpace\\FileUpload\\src\\FileUpload\\FileUpload.API\\Controllers\\UploadContentController.cs*",
-              "RelativeToolTip": "src\\FileUpload\\FileUpload.API\\Controllers\\UploadContentController.cs*",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wBQAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-02T12:36:20.803Z",
-              "EditorCaption": ""
             }
           ]
         }
